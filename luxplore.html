@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxplore | LukEast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-up {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #f59e0b, #ea580c, #dc2626);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth">
+
+<!-- HEADER -->
+<!-- HEADER -->
+<header class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white py-6 sticky top-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+      <span class="text-2xl">←</span>
+      <h1 class="text-2xl font-bold">LukEast</h1>
+    </a>
+
+    <p class="text-sm font-light">See the East Differently</p>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 text-center relative overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+    <h2 class="text-5xl md:text-6xl font-black mb-6 animate-fade-up">Luxplore</h2>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.2s">
+      Paket Ekowisata & Responsible Travel Indonesia Timur
+    </p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-12 bg-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Luxplore menghadirkan pengalaman wisata berbasis komunitas, 
+      di mana setiap perjalanan Anda berkontribusi langsung pada ekonomi lokal dan pelestarian budaya.
+    </p>
+  </div>
+</section>
+
+<!-- PAKET WISATA -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h3 class="text-4xl font-bold text-center mb-16 gradient-text">
+      Pilih Paket Wisata
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Paket 1 -->
+      <div class="card-hover bg-white rounded-3xl shadow-lg overflow-hidden">
+        <img src="https://jadesta.kemenpar.go.id/imgpost/64425.jpg" 
+             class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-green-700">
+            Menjadi Pengrajin Gula Aren Desa Kamiri
+          </h4>
+
+          <p class="text-sm text-gray-600 mb-3">
+            1 Hari • edukasi
+          </p>
+
+          <p class="text-gray-700 mb-4">
+          Merasakan bagaimana kehidupan para pengrajin gula aren
+          </p>
+
+          <p class="text-2xl font-bold text-orange-600 mb-4">
+            Rp 600.000 / pax (6 orang)
+          </p>
+
+          <!-- Form Booking -->
+          <div class="space-y-3">
+            <input type="date" class="w-full border rounded-lg p-2">
+            <input type="number" min="1" placeholder="minimal 6 peserta" class="w-full border rounded-lg p-2">
+
+            <button class="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition">
+              Pesan Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paket 2 -->
+      <div class="card-hover bg-white rounded-3xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=300&fit=crop"
+             class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-blue-700">
+            Jikumerasa Nature Learning
+          </h4>
+
+          <p class="text-sm text-gray-600 mb-3">
+            2 Hari 1 Malam • Wisata Alam • edukasi
+          </p>
+
+          <p class="text-gray-700 mb-4">
+            Menjadi petani daun minyak kayu putih, The Golden Oil of Buru
+          </p>
+
+          <p class="text-2xl font-bold text-orange-600 mb-4">
+            Rp 1.500.000 / pax (6 orang
+          </p>
+
+          <div class="space-y-3">
+            <input type="date" class="w-full border rounded-lg p-2">
+            <input type="number" min="1" placeholder="minimal 6 peserta" class="w-full border rounded-lg p-2">
+
+            <button class="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition">
+              Pesan Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paket 3 -->
+      <div class="card-hover bg-white rounded-3xl shadow-lg overflow-hidden">
+        <img src="https://indonesiakaya.com/wp-content/uploads/2024/09/9-1.jpg"
+             class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-purple-700">
+            Bliransina Cultural Tour - A Weaving Journey
+          </h4>
+
+          <p class="text-sm text-gray-600 mb-3">
+            1 Hari Workshop • Seni Tradisional
+          </p>
+
+          <p class="text-gray-700 mb-4">
+            Workshop seni dan budaya langsung bersama komunitas lokal.
+          </p>
+
+          <p class="text-2xl font-bold text-orange-600 mb-4">
+            Rp 1.250.000 / pax (6 orang)
+          </p>
+
+          <div class="space-y-3">
+            <input type="date" class="w-full border rounded-lg p-2">
+            <input type="number" min="1" placeholder="minimal 6 peserta" class="w-full border rounded-lg p-2">
+
+            <button class="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition">
+              Pesan Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-6">Jelajahi Timur dengan Dampak Positif</h3>
+    <p class="text-xl mb-8">
+      Setiap tiket yang Anda beli membantu memberdayakan masyarakat lokal.
+    </p>
+    <a href="kirim-cerita.html"
+       class="bg-white text-orange-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition shadow-lg inline-block">
+      Lihat Cerita Wisatawan
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-gray-950 via-gray-900 to-black text-gray-300 text-center py-8 border-t border-gray-700">
+  <p class="font-semibold text-lg">
+    © 2026 <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">LukEast</span>. See the East Differently.
+  </p>
+</footer>
+
+</body>
+</html>
+
