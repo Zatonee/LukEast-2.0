@@ -82,6 +82,17 @@
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     }
   </style>
+  <!-- Google Translate -->
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'id',
+    includedLanguages: 'en,id',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body class="font-sans text-gray-800 scroll-smooth">
@@ -94,6 +105,7 @@
     <h1 class="text-6xl md:text-7xl font-black mb-6 animate-fade-up tracking-tight">
       <span class="gradient-text">LukEast</span>
     </h1>
+    <div id="google_translate_element" class="absolute top-5 right-5 z-50"></div>
     <p class="text-2xl md:text-3xl max-w-3xl mx-auto mb-6 animate-fade-up font-light leading-relaxed" style="animation-delay: 0.2s">
       Agregator Ekowisata & Potensi Lokal <span class="font-bold text-yellow-300">Indonesia Timur</span>
     </p>
@@ -295,13 +307,13 @@
       <div class="card-hover bg-white/10 backdrop-blur border border-white/30 rounded-2xl p-6">
        <img src="https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F652%2FPNG%2F512%2Fgmail_icon-icons.com_59877.png&id=59877&pack_or_individual=pack" alt="Gmail" class="w-12 h-12 mx-auto mb-3">
         <p class="font-semibold mb-2">Email</p>
-        <a href="mailto:info@lukeast.id" class="text-white/80 hover:text-white transition font-light">lukeast2026@gmail.com</a>
+        <a href="mailto:info@lukeast.id" class="text-white/80 hover:text-white transition font-light">info@lukeast.id</a>
       </div>
       
       <div class="card-hover bg-white/10 backdrop-blur border border-white/30 rounded-2xl p-6">
         <img src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/whatsapp-logo-transparent-background-12.png" alt="WhatsApp" class="w-12 h-12 mx-auto mb-3">
         <p class="font-semibold mb-2">WhatsApp</p>
-        <a href="https://wa.me/6281219987598" class="text-white/80 hover:text-white transition font-light">+62 812-1998-7598</a>
+        <a href="https://wa.me/6281234567890" class="text-white/80 hover:text-white transition font-light">+62 812-3456-7890</a>
       </div>
       
       <div class="card-hover bg-white/10 backdrop-blur border border-white/30 rounded-2xl p-6">
@@ -336,7 +348,4 @@
 </script>
 
 </body>
-
 </html>
-
-
