@@ -28,6 +28,37 @@
       background-clip: text;
     }
   </style>
+  <!-- Google Translate -->
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'id',
+    includedLanguages: 'en,id',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+.goog-te-gadget {
+  font-size: 0px;
+}
+.goog-te-combo {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+body {
+  top: 0px !important;
+}
+</style>
 </head>
 
 <body class="font-sans text-gray-800 scroll-smooth">
@@ -41,6 +72,7 @@
     </a>
     <p class="text-sm font-light">See the East Differently</p>
   </div>
+  <div id="google_translate_element"></div>
 </header>
 
 <!-- HERO SECTION -->
@@ -249,3 +281,4 @@
 
 </body>
 </html>
+
